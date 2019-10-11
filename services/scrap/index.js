@@ -1,6 +1,6 @@
 'use strict'
 let log = console.log
-let scraper = require('../../scraper')
+let scraper = require('scraper')
 module.exports = async function (fastify, opts) {
   fastify.get('/scrap/:name/:typeSite', async function (request, reply) {
     let name = request.params.name, 
